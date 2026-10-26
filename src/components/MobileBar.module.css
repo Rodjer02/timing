@@ -1,0 +1,37 @@
+.bar {
+  display: none;
+  position: sticky;
+  bottom: 0;
+  z-index: 40;
+  background: rgba(7, 3, 4, 0.9);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-top: 1px solid rgba(255, 59, 74, 0.3);
+  padding: 10px var(--gutter) calc(14px + env(safe-area-inset-bottom, 0px));
+}
+
+.wa {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--red);
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--ff-display);
+  font-weight: 800;
+  font-size: 16px;
+  height: 54px;
+  border-radius: 14px;
+  box-shadow: 0 0 24px rgba(225, 29, 46, 0.55);
+}
+.wa:hover {
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .bar {
+    display: flex;
+  }
+}
